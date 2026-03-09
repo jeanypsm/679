@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE users SET password = '$2b$10$lkS7Eo/bJO/pBAvYEQfrT.LPgMsDEteG9y8DspsPqVZ0hgHdLj1P.' WHERE email = 'zaguinha1@dataconsult.com';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3weSRePCf4zwPjY.root --database 7Zv3qGjzmu2Ujot5bvyRY4 --execute UPDATE users SET password = '$2b$10$lkS7Eo/bJO/pBAvYEQfrT.LPgMsDEteG9y8DspsPqVZ0hgHdLj1P.' WHERE email = 'zaguinha1@dataconsult.com';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 362
+}
