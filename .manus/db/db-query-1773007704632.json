@@ -1,9 +1,0 @@
-{
-  "query": "INSERT INTO users (openId, email, name, password, loginMethod, role, accessMinutes, createdAt, updatedAt, lastSignedIn) \nVALUES ('admin-zaguinha1', 'zaguinha1@dataconsult.com', 'Zaguinha Admin', '$2a$10$K8h5K8h5K8h5K8h5K8h5KuZc3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z', 'email', 'admin', 999999, NOW(), NOW(), NOW())\nON DUPLICATE KEY UPDATE password = '$2a$10$K8h5K8h5K8h5K8h5K8h5KuZc3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z', role = 'admin';",
-  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3weSRePCf4zwPjY.root --database 7Zv3qGjzmu2Ujot5bvyRY4 --execute INSERT INTO users (openId, email, name, password, loginMethod, role, accessMinutes, createdAt, updatedAt, lastSignedIn) \nVALUES ('admin-zaguinha1', 'zaguinha1@dataconsult.com', 'Zaguinha Admin', '$2a$10$K8h5K8h5K8h5K8h5K8h5KuZc3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z', 'email', 'admin', 999999, NOW(), NOW(), NOW())\nON DUPLICATE KEY UPDATE password = '$2a$10$K8h5K8h5K8h5K8h5K8h5KuZc3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z', role = 'admin';",
-  "rows": [],
-  "messages": [],
-  "stdout": "",
-  "stderr": "",
-  "execution_time_ms": 507
-}

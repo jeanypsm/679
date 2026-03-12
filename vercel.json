@@ -1,0 +1,36 @@
+{
+  "buildCommand": "pnpm build",
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/trpc/:path*",
+      "destination": "/api/trpc/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ],
+  "env": [
+    {
+      "key": "DATABASE_URL",
+      "description": "MySQL/TiDB connection string"
+    },
+    {
+      "key": "JWT_SECRET",
+      "description": "Secret key for JWT signing"
+    },
+    {
+      "key": "ISEEK_API_TOKEN",
+      "description": "API token for iseek.pro integration"
+    }
+  ],
+  "functions": {
+    "api/**/*.ts": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}
